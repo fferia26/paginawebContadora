@@ -12,7 +12,32 @@ body {
     font-size: 1.6rem;
 }
 
-.container-images {
+header {
+    background-color: black;
+    display: flex;
+}
+
+.logo span {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: brown;
+    color: #fff;
+}
+
+.menu li {
+    display: inline-block;
+    background-color: brown;
+    margin: 1rem 0 1rem 1rem;
+    padding: 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.containainer-images {
     width: 100%;
     max-width: 70rem;
     margin: 0 auto;
