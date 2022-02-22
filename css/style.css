@@ -35,6 +35,10 @@ header {
     border-radius: .5rem;
 }
 
+.menu li:hover {
+    background-color: #DE0A02;
+}
+
 .menu a {
     text-decoration: none;
     color: #fff;
