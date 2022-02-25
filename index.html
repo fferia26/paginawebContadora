@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f53e17deb3.js" crossorigin="anonymous"></script>
     <title>Liliana Galindo</title>
   </head>
   <body>
@@ -19,86 +21,102 @@
       </nav>
     </header>
 
-    <section>
-      <div class="container-images">
-        <img class="images" src="images/Escritorio.jpg" alt="Contadora" />
-      </div>
-    </section>
+    <div class="hero"></div>
 
     <main>
-      <h3>Services</h3>
+      <h3 class="title">Services</h3>
       
-      <div>
-        <div class="container-images">
-           <img class="images" src="images/finanzas.jpg" alt="Imagen servicio" />
-        </div>
-        <div>
-            <h4>Service #1</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum
-            temporibus accusamus exercitationem a harum consequatur, omnis beatae
-            numquam veniam iste laboriosam tempora. Enim eos, eligendi quisquam
-            neque explicabo quo.</p>
-            <a href="#">Ver más</a>
-        </div> <!-- Descripción servicio -->
-      </div> <!-- Servicio -->
-      <div>
-        <div class="container-images">
-           <img class="images" src="images/Contadora.jpg" alt="Imagen servicio" />
-        </div>
-        <div>
-            <h4>Service #2</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum
-            temporibus accusamus exercitationem a harum consequatur, omnis beatae
-            numquam veniam iste laboriosam tempora. Enim eos, eligendi quisquam
-            neque explicabo quo.</p>
-            <a href="#">Ver más</a>
-        </div> <!-- Descripción servicio -->
-      </div> <!-- Servicio -->
-      <div>
-        <div class="container-images">
-           <img class="images" src="images/Analisis.jpg" alt="Imagen servicio" />
-        </div>
-        <div>
-            <h4>Service #3</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum
-            temporibus accusamus exercitationem a harum consequatur, omnis beatae
-            numquam veniam iste laboriosam tempora. Enim eos, eligendi quisquam
-            neque explicabo quo.</p>
-            <a href="#">Ver más</a>
-        </div> <!-- Descripción servicio -->
-      </div> <!-- Servicio -->
+      <div class="list-services container">
+          <div class="services">
+            <div class="img-services">
+              <img src="images/Contadora.jpg" alt="Imagen servicio" />
+            </div>
+
+            <div class="services">
+                <h4>Service #1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum
+                temporibus accusamus exercitationem a harum consequatur, omnis beatae
+                numquam veniam iste laboriosam tempora. Enim eos, eligendi quisquam
+                neque explicabo quo.</p>
+                <a href="#">Ver más</a>
+            </div> <!-- Descripción servicio -->
+          </div> <!-- Servicio -->
+
+          <div class="services">
+            <div class="img-services">
+              <img src="images/Analisis.jpg" alt="Imagen servicio" />
+            </div>
+            <div>
+                <h4>Service #2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum
+                temporibus accusamus exercitationem a harum consequatur, omnis beatae
+                numquam veniam iste laboriosam tempora. Enim eos, eligendi quisquam
+                neque explicabo quo.</p>
+                <a href="#">Ver más</a>
+            </div> <!-- Descripción servicio -->
+          </div> <!-- Servicio -->
+
+          <div class="services">
+            <div class="img-services">
+              <img src="images/Escritorio.jpg" alt="Imagen servicio" />
+            </div>
+            <div>
+                <h4>Service #3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum
+                temporibus accusamus exercitationem a harum consequatur, omnis beatae
+                numquam veniam iste laboriosam tempora. Enim eos, eligendi quisquam
+                neque explicabo quo.</p>
+                <a href="#">Ver más</a>
+            </div> <!-- Descripción servicio -->
+          </div> <!-- Servicio -->
+    </div><!-- Listado de servicios -->
     </main>
     
     <!-- Contact -->
     <section>
-        <div>
-            <div>
-                <p>Icono Menaje</p>
+      <h3 class="title">Contact</h3>
+
+        <div class="contain-contact container">
+          <div class="conatin-form">
+            <div class="iconos">
+              <button><i class="fa-solid fa-envelope"></i></button>
             </div>
+              <div>
+                  <form action="#" method="post">
+                      <label for="fullname">Nombres y Apellidos:</label>
+                      <input type="text" name="fullname" id="fullname" placeholder="Nombre completo">
+                      <br>
+                      <label for="adresses">Correo Electronico</label>
+                      <input type="email" name="adresses" id="adresses" placeholder="Correo electronico">
+                      <br>
+                      <label for="movil">Telefono:</label>
+                      <input type="tel" name="movil" id="movil" placeholder="Celular">
+                      <br>
+                      <textarea name="message" id="message"></textarea>
+                      <br>
+                      <input type="submit" value="Enviar">
+                  </form>
+              </div> <!-- Formulario de contacto -->
+          </div> <!-- Container Formulario -->
+
+          <div class="contain-chats">
             <div>
-                <form action="#" method="post">
-                    <input type="text" name="fullname" id="fullname">
-                    <input type="email" name="adresses" id="adresses">
-                    <input type="tel" name="movil" id="movil">
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <a href="#">Sent</a>
-                </form>
-            </div> <!-- Formulario de contacto -->
-        </div>
-        <div>
-            <div>
-                <p>Icono Chats</p>
+                <div class="iconos">
+                    <button><i class="fa-solid fa-comments"></i></button>
+                </div>
+
+                <div class="horario">
+                    <h4>Horario de atención</h4>
+                    <p>Watsapp</p>
+                    <p>Telegram</p>
+                </div> <!-- Horarios de atención -->
             </div>
-            <div>
-                <h4>Horario de atención</h4>
-                <p>Watsapp</p>
-                <p>Telegram</p>
-            </div> <!-- Horarios de atención -->
-        </div>
+          </div> <!-- Container Chats -->
+       </div>
     </section>
 
     <footer>
-        <p>fferia@2022</p>
+        <p>Design with ❤️ By fferia@2022</p>
     </footer>
   </body>
 </html>

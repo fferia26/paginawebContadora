@@ -1,3 +1,4 @@
+/* Globales */
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +10,23 @@ html {
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
 }
 
+img {
+    width: 100%;
+}
+
+/* Header y Navegación */
 header {
-    background-color: black;
     overflow: hidden;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem auto;
 }
 
 .logo span {
@@ -52,13 +64,51 @@ header {
     float: right;
 }
 
-.container-images {
-    width: 100%;
-    max-width: 70rem;
-    margin: 0 auto;
-    background-color: black;
+/* Hero */
+.hero {
+    background-image: url(../images/finanzas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 57rem;
 }
 
-.images {
-    width: 100%;
+/* Services */
+.container {
+    width: 120rem;
+    margin: 2rem auto;
+}
+
+.list-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.img-services {
+    width: 40rem;
+}
+
+/* Contact */
+.contain-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* Iconos Fontawesome */
+button {
+    background-color: #fff;
+    color: #183153;
+    width: 10rem;
+    height: 10rem;
+    font-size: 60px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
 }
