@@ -16,6 +16,7 @@ body {
 
 img {
     width: 100%;
+    display: block;
 }
 
 /* Header y Navegación */
@@ -88,12 +89,35 @@ header {
     width: 40rem;
 }
 
+.description-services h4 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.description-services p {
+    padding: .5rem 1rem;
+}
+
+.description-services a {
+    display: block;
+    background-color: brown;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
 /* Contact */
 .contain-contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
+
 
 /* Iconos Fontawesome */
 button {
