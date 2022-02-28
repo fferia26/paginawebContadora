@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/f53e17deb3.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
     <title>Liliana Galindo</title>
   </head>
   <body>
@@ -24,7 +28,7 @@
     <div class="hero"></div>
 
     <main>
-      <h3 class="title">Services</h3>
+      <h3 class="title">SERVICES</h3>
       
       <div class="list-services container">
           <div class="services">
@@ -74,43 +78,34 @@
     
     <!-- Contact -->
     <section>
-      <h3 class="title">Contact</h3>
+      <h3 class="title">CONTACT</h3>
 
         <div class="contain-contact container">
           <div class="conatin-form">
-            <div class="iconos">
-              <button><i class="fa-solid fa-envelope"></i></button>
-            </div>
-              <div>
-                  <form action="#" method="post">
-                      <label for="fullname">Nombres y Apellidos:</label>
+            <button class="iconos"><i class="fa-solid fa-envelope"></i></button><!-- Iconos -->
+                <form action="#" method="post">
+                      <label for="fullname">Nombres y Apellidos:</label><br>
                       <input type="text" name="fullname" id="fullname" placeholder="Nombre completo">
                       <br>
-                      <label for="adresses">Correo Electronico</label>
+                      <label for="adresses">Correo Electronico</label><br>
                       <input type="email" name="adresses" id="adresses" placeholder="Correo electronico">
                       <br>
-                      <label for="movil">Telefono:</label>
+                      <label for="movil">Telefono:</label><br>
                       <input type="tel" name="movil" id="movil" placeholder="Celular">
                       <br>
                       <textarea name="message" id="message"></textarea>
                       <br>
                       <input type="submit" value="Enviar">
-                  </form>
-              </div> <!-- Formulario de contacto -->
-          </div> <!-- Container Formulario -->
+                  </form><!-- Formulario de contacto -->
+          </div><!-- Contain Form -->
 
           <div class="contain-chats">
-            <div>
-                <div class="iconos">
-                    <button><i class="fa-solid fa-comments"></i></button>
-                </div>
-
+                  <button class="iconos"><i class="fa-solid fa-comments"></i></button><!-- Iconos -->
                 <div class="horario">
                     <h4>Horario de atención</h4>
                     <p>Watsapp</p>
                     <p>Telegram</p>
                 </div> <!-- Horarios de atención -->
-            </div>
           </div> <!-- Container Chats -->
        </div>
     </section>
