@@ -80,22 +80,25 @@
     <section>
       <h3 class="title">CONTACT</h3>
 
-        <div class="contain-contact container">
-          <div class="conatin-form">
-            <button class="iconos"><i class="fa-solid fa-envelope"></i></button><!-- Iconos -->
+        <div class="container contain-contact">
+
+          <div class="contain-form">
+            <!-- <button class="iconos"><i class="fa-solid fa-envelope"></i></button> -->
+            <h4 class="title-form">Envia un mensaje</h4>
                 <form action="#" method="post">
-                      <label for="fullname">Nombres y Apellidos:</label><br>
-                      <input type="text" name="fullname" id="fullname" placeholder="Nombre completo">
+                      <label for="fullname">Nombres y Apellidos*</label><br>
+                      <input type="text" name="fullname" id="fullname" required>
                       <br>
-                      <label for="adresses">Correo Electronico</label><br>
-                      <input type="email" name="adresses" id="adresses" placeholder="Correo electronico">
+                      <label for="adresses">Correo Electronico*</label><br>
+                      <input type="email" name="adresses" id="adresses" required>
                       <br>
-                      <label for="movil">Telefono:</label><br>
-                      <input type="tel" name="movil" id="movil" placeholder="Celular">
+                      <label for="movil">Telefono*</label><br>
+                      <input type="tel" name="movil" id="movil" required>
                       <br>
-                      <textarea name="message" id="message"></textarea>
+                      <label for="message">Mensaje*</label><br>
+                      <textarea name="message" id="message" required></textarea>
                       <br>
-                      <input type="submit" value="Enviar">
+                      <input type="submit" value="Enviar mensaje">
                   </form><!-- Formulario de contacto -->
           </div><!-- Contain Form -->
 
@@ -103,7 +106,9 @@
                   <button class="iconos"><i class="fa-solid fa-comments"></i></button><!-- Iconos -->
                 <div class="horario">
                     <h4>Horario de atención</h4>
+                    <i class="fa-brands fa-whatsapp"></i>
                     <p>Watsapp</p>
+                    <i class="fa-brands fa-telegram"></i>
                     <p>Telegram</p>
                 </div> <!-- Horarios de atención -->
           </div> <!-- Container Chats -->
@@ -111,7 +116,7 @@
     </section>
 
     <footer>
-        <p>Design with ❤️ By fferia@2022</p>
+        <p>Design with ❤️ By @fferia</p>
     </footer>
   </body>
 </html>
